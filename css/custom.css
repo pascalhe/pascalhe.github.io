@@ -1,30 +1,13 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
+/* pink   #E383C2
+   green  #9AF0CD
+   lila   #B2BBFA
+   yellow #FBFFB8
+   brown  #B4906A 
+lila-pink #633955, E8CBDE, E383C2, 63575F, B06696
+   */
+
 body {
-  padding-top: 50px;
-  padding-bottom: 20px;
-}
-
-ul.nav {
-	padding-top: 20px;
-	font-family: avenir, verdana, helvetica;
-	font-size: 16px;
-}
-
-.jumbotron {
-	text-align: center;
-	background-image: url('../img/bg_mix.png');
-}
-
-.jumbotron h1 {
-	font-family: 'Halant', serif;
-	font-weight: 100;
-	margin-top: 20px;
-    margin-bottom: 50px; 
-}
-
-.jumbotron p {
-	padding: 0 40px;
-	margin-bottom: 30px;
 	font-family: avenir, verdana, helvetica;
 }
 
@@ -32,14 +15,49 @@ ul.nav {
 	font-size: 24px;
 }
 
-.navbar-header {
-	padding-bottom: 40px;
+.btn-new {
+  font-family: avenir, verdana, helvetica;
+  color: #E8CBDE;
+  background-color: #63575F;
 }
 
 .navbar {
-	background-color: #424242;
+	background-color: #63575F;
+	font-size: 16px;
 }
 
-.col-md-6.col-md-offset-3 {
+.navbar-inverse .navbar-nav>li>a {
+  color: #E8CBDE;
+}
+
+.jumbotron {
+	margin-top: 50px;
 	text-align: center;
+	color: #B4906A;
+  background-color: #E8CBDE;
+}
+
+.jumbotron h1 {
+	font-family: 'Halant', serif;
+	font-weight: 100;
+	margin-top: 20px;
+  margin-bottom: 50px; 
+}
+
+.jumbotron p {
+	padding: 0 40px;
+	margin-bottom: 30px;
+}
+
+.service h2 {
+	font-family: 'Halant', serif;
+	font-weight: 300;
+	color: #B06696;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+	background-color: #E383C2;
 }
