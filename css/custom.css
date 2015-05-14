@@ -1,14 +1,55 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
-/* pink   #E383C2
-   green  #9AF0CD
-   lila   #B2BBFA
-   yellow #FBFFB8
-   brown  #B4906A 
-lila-pink #633955, E8CBDE, E383C2, 63575F, B06696
-   */
+/* pink	  #E383C2  green  #9AF0CD lila	 #B2BBFA yellow #FBFFB8 brown  #B4906A */
+/* lila-pink #633955, E8CBDE, E383C2, 63575F, B06696 */
+/* adobe color 4: #D9D7CC #D9AC84 #8C2711 #591202 #400101 */
+
+@font-face {
+    font-family: honeyScriptLight;
+    src: url('../fonts/honey-script/HoneyScript-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: honeyScriptSemiBold;
+    src: url('../fonts/honey-script/HoneyScript-SemiBold.ttf') format('truetype');
+}
+
+.navbar-brand {
+	padding: 5px;
+	font-family: honeyScriptLight;
+	font-size: xx-large;
+}
+
+.navbar {
+	background-color: #1a181a;
+	font-size: 16px;
+	border-top: 2px solid rgba(255,  145,  97, 0.7);
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	font-family: 'Halant', serif;
+	color: rgba(255, 145, 97, 0.7);
+	
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+	color: #FF9160;	
+}
+
+.navbar-inverse .navbar-nav>.active>a, 
+.navbar-inverse .navbar-nav>.active>a:focus, 
+.navbar-inverse .navbar-nav>.active>a:hover {
+  color: #FF9160;
+  background-color: rgba(255,  145,  97, 0.15);	
+}
 
 body {
 	font-family: avenir, verdana, helvetica;
+}
+
+.line {
+	border-bottom: 1px solid rgba(186, 108, 75, 1);
+	width: 130px;
+	margin: 0 auto 20px auto;	
 }
 
 .btn-lg {
@@ -16,32 +57,39 @@ body {
 }
 
 .btn-new {
-  font-family: avenir, verdana, helvetica;
-  color: #E8CBDE;
-  background-color: #63575F;
-}
-
-.navbar {
+	font-family: avenir, verdana, helvetica;
+	color: #E8CBDE;
 	background-color: #63575F;
-	font-size: 16px;
 }
 
-.navbar-inverse .navbar-nav>li>a {
-  color: #E8CBDE;
+
+q {
+	font-family: serif;
+	font-size: larger;
+	font-style: oblique;
+	color: #B4906A;
 }
 
 .jumbotron {
+	height:100vh;
 	margin-top: 50px;
-	text-align: center;
-	color: #B4906A;
-  background-color: #E8CBDE;
+	margin-bottom: 0;
+	color: #ffffff;
+	background:url('../img/weddingFlower2.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .jumbotron h1 {
-	font-family: 'Halant', serif;
-	font-weight: 100;
+	font-family: 'honeyScriptLight' ,'Halant', serif;	
+	font-size: 18vw;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.1);
 	margin-top: 20px;
-  margin-bottom: 50px; 
+	margin-bottom: 50px; 
+	padding-left: 40px;
 }
 
 .jumbotron p {
@@ -49,15 +97,98 @@ body {
 	margin-bottom: 30px;
 }
 
-.service h2 {
-	font-family: 'Halant', serif;
-	font-weight: 300;
-	color: #B06696;
+#aboutUs {
+	background-color: rgba(254, 144, 95, 0.3);
 }
 
-footer {
-  margin-top: 40px;
-  padding: 20px;
-  text-align: center;
-  background-color: #E383C2;
+#ourSpeciality {
+	background-color: rgba(159, 254, 216, 1);
 }
+
+#ourSpeciality .thumbnail{
+	background-color: rgba(159, 254, 216, 1);
+	border: none;
+}
+
+#orders {
+    background-color: rgba(130, 163, 253, 0.6);	
+}
+
+#menu {
+	background-color: rgba(254, 144, 95, 0.3);
+}
+
+#localCatering {
+	background-color: rgba(159, 254, 216, 1);
+}
+
+#contact {
+    background-color: rgba(130, 163, 253, 0.6);	
+}
+
+.thumbnail h3 {
+	text-align: center;	
+	margin-bottom: 20px;
+}
+
+.thumbnail img{
+  	max-height: 200px;
+}
+
+.homepage {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.homepage h2 {
+	font-family: 'Halant', serif;
+	font-weight: 300;
+	color: rgba(186, 108, 75, 1);
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.homepage h3 {
+	font-family: 'Halant', serif;
+	font-weight: 200;
+}
+
+.homepage ul{
+	list-style-type:none;
+}
+
+	
+footer {
+	padding: 20px;
+	text-align: center;
+	background-color: rgba(127, 101, 87, 0.6);
+}
+
+.fa {
+	color: #333	
+}
+
+#socialMedia .list-group{
+	position: fixed;
+	bottom: 5px;
+	right: 5px;
+	padding: 0px;
+	margin: 0px;
+}
+
+#socialMedia .list-group-item{
+	padding: 5px;
+	background-color: transparent;
+	border: none;
+}
+
+/*.list-group-social {
+	padding: 0px;
+	margin: 0px;
+}
+
+.list-group-item-social {
+	position: relative;
+	display: block;
+	padding: 5px;
+}*/
