@@ -8,11 +8,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="img/fav/favicon.png">
-
     <title>Antique Pastries</title>
 
     <!-- google font and font-Awesome -->
-    <link href='http://fonts.googleapis.com/css?family=Halant:300,400' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Halant:300,400" rel='stylesheet' type='text/css'>
     <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -182,9 +181,63 @@
 			<p>By phone: <a href="tel:+16462500009">+1.646.250.0009</a></p>
 			<h3>Operating hours</h3>
 			<p>Monday to Friday from 9 a.m. to 5 p.m.</p>
-			<p>Any questions or inquiries? Please send us a message:</p>
+			<p>Any questions or inquiries? Please send us a message</p>
+
+			<div class="modal fade bs-example-modal-sm" id="formSuccess" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-sm">
+					<div class="alert alert-success alert-dismissible" role="alert">
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						Your message has been sent.
+					</div>
+				</div>
+			</div>
+			
+			<!-- Button trigger modal -->
+			<button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal">Contact us</button>			
+			<!-- Modal -->
+
+			<div class="modal fade bs-example-modal-md" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            	<div class="modal-dialog modal-md">
+					<div class="modal-content">
+		                <div class="modal-header">
+			                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			                <h4 class="modal-title" id="myModalLabel">Contact Us</h4>
+						</div>
+						<div class="modal-body">
+							<script type="text/javascript">
+								var submitted=false;
+							</script>
+						
+							<iframe id="hidden_iframe" name="hidden_iframe" onload="if(submitted){$('#myModal').modal('hide');$('#formSuccess').modal('show');document.getElementById('contactForm').reset();}" style="display: none;"></iframe>
+
+							<form role="form" id="contactForm" action="https://docs.google.com/forms/d/1BKEJ8tUEevT5r6UYGez9Aycu-8rrKD0Rjgitg5v-8ew/formResponse?embedded=true" method="POST" onsubmit="submitted=true;" target="hidden_iframe">
+								<div class="form-group">
+									<label for="entry_40144791"></label>
+									<input type="name" name="entry.40144791" value="" id="entry_40144791" required="" class="form-control" placeholder="Enter Name"><i class="fa fa-user"></i>
+								</div>
+								<div class="form-group">
+									<label for="entry_775689925"></label>
+									<input type="email" name="entry.775689925" value="" id="entry_775689925" required="" class="form-control" placeholder="Enter email"><i class="fa fa-envelope-o"></i>
+								</div>
+								<div class="form-group">
+									<label for="entry_1974305609"></label>
+									<input type="tel" name="entry.1974305609" value="" id="entry_1974305609" class="form-control" placeholder="Enter phone number"><i class="fa fa-phone"></i>
+								</div>
+								<div class="form-group">
+									<label for="entry_584704735"></label>
+									<textarea name="entry.584704735" id="entry_584704735" required="" cols="78" rows="7" placeholder="Message" ></textarea>
+								</div>				
+								<input type="hidden" name="draftResponse" value="[,,&quot;6472470220506489029&quot;]">
+								<input type="hidden" name="pageHistory" value="0">
+								<input type="hidden" name="fbzx" value="6472470220506489029">
+								<button type="submit" name="submit" class="btn btn-success btn-md">Send</button>
+							</form>
+						</div><!--modal-body-->
+					</div><!--modal-content-->
+				</div>
+			</div><!--modal-->
 		</div>
-    </div> <!-- /localCatering -->	
+    </div> <!-- /contact -->	
 	
     <footer>
 		<div class="container">

@@ -182,6 +182,20 @@ footer {
 	border: none;
 }
 
+.modal .form-group {
+	position: relative;
+}
+
+.modal input {
+    padding-left: 7%;
+}
+
+.modal .fa {
+	position: absolute;
+	top: 54%;
+	left: 2%;
+}
+
 /*.list-group-social {
 	padding: 0px;
 	margin: 0px;
