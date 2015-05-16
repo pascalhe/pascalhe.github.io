@@ -208,25 +208,30 @@
 								var submitted=false;
 							</script>
 						
-							<iframe id="hidden_iframe" name="hidden_iframe" onload="if(submitted){$('#myModal').modal('hide');$('#formSuccess').modal('show');document.getElementById('contactForm').reset();}" style="display: none;"></iframe>
+							<iframe id="hidden_iframe" name="hidden_iframe" onload="if(submitted){$('#myModal').modal('hide');$('#formSuccess').modal('show');document.getElementById('#contactForm').reset();}" style="display: none;"></iframe>
 
 							<form role="form" id="contactForm" action="https://docs.google.com/forms/d/1BKEJ8tUEevT5r6UYGez9Aycu-8rrKD0Rjgitg5v-8ew/formResponse?embedded=true" method="POST" onsubmit="submitted=true;" target="hidden_iframe">
 								<div class="form-group">
-									<label for="entry_40144791"></label>
-									<input type="name" name="entry.40144791" value="" id="entry_40144791" required="" class="form-control" placeholder="Enter Name"><i class="fa fa-user"></i>
+									<label class="control-label" for="entry_40144791"></label>
+									<input type="text" name="entry.40144791" value="" id="entry_40144791" required="" class="form-control" placeholder="Enter Name" autofocus=""><i class="fa fa-user"></i>
 								</div>
 								<div class="form-group">
-									<label for="entry_775689925"></label>
+									<label class="control-label" for="entry_775689925"></label>
 									<input type="email" name="entry.775689925" value="" id="entry_775689925" required="" class="form-control" placeholder="Enter email"><i class="fa fa-envelope-o"></i>
 								</div>
 								<div class="form-group">
-									<label for="entry_1974305609"></label>
+									<label class="control-label" for="entry_1974305609"></label>
 									<input type="tel" name="entry.1974305609" value="" id="entry_1974305609" class="form-control" placeholder="Enter phone number"><i class="fa fa-phone"></i>
 								</div>
 								<div class="form-group">
-									<label for="entry_584704735"></label>
-									<textarea name="entry.584704735" id="entry_584704735" required="" cols="78" rows="7" placeholder="Message" ></textarea>
-								</div>				
+									<label class="control-label" for="entry_584704735"></label>
+									<textarea name="entry.584704735" id="entry_584704735" required="" placeholder="Message" class="form-control" rows="5"></textarea>
+								</div>	
+								
+								
+
+								
+											
 								<input type="hidden" name="draftResponse" value="[,,&quot;6472470220506489029&quot;]">
 								<input type="hidden" name="pageHistory" value="0">
 								<input type="hidden" name="fbzx" value="6472470220506489029">
@@ -259,6 +264,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/smoothScroll.js"></script>
+    <script src="js/formValidate.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
   </body>

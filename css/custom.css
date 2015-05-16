@@ -196,6 +196,23 @@ footer {
 	left: 2%;
 }
 
+/* .invalid class prevents CSS from automatically applying */
+.invalid input:required:invalid,
+.invalid textarea:required:invalid  {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #a94442;
+}
+
+/* Mark valid inputs during .invalid state */
+.invalid input:required:valid, 
+.invalid textarea:required:valid {
+ 	color: #3c763d;
+ 	background-color: #dff0d8;
+ 	border-color: #3c763d;
+}
+
+
 /*.list-group-social {
 	padding: 0px;
 	margin: 0px;
