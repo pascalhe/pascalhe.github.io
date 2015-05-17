@@ -215,7 +215,7 @@ footer {
 
 @media (max-width: 767px) {
 	.jumbotron {
-		background:url('../img/weddingFlower_iphone.png') no-repeat center center fixed;
+		background:url('../img/weddingFlower_iphone.png') no-repeat;
 	} 
 	.jumbotron h1 {	
 		font-size: 16vw;
