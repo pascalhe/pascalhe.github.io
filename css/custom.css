@@ -246,5 +246,6 @@ ul.share-buttons>li:first-child{
 	ul.share-buttons>li:first-child {
     	display: block;
 		padding-bottom: 10px;
+		padding-right: 0;
 	}
 }
