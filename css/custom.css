@@ -70,6 +70,7 @@ q {
 	color: #B4906A;
 }
 
+
 .jumbotron {
 	height:100vh;
 	margin-top: 50px;
@@ -210,6 +211,19 @@ footer {
  	color: #3c763d;
  	background-color: #dff0d8;
  	border-color: #3c763d;
+}
+
+@media (max-width: 767px) {
+	.jumbotron {
+		background:url('../img/weddingFlower_iphone.png') no-repeat center center fixed;
+		-webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+	} 
+	.jumbotron h1 {	
+		font-size: 16vw;
+	}
 }
 
 
