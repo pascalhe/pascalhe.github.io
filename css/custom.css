@@ -212,13 +212,24 @@ footer {
  	border-color: #3c763d;
 }
 
+ul.share-buttons .fa {
+	color: whitesmoke
+}
+
 ul.share-buttons{
     list-style: none;
     padding: 0;
+	color: whitesmoke
 }
 
 ul.share-buttons li{
     display: inline;
+	padding-right: 2%;
+}
+ul.share-buttons>li:first-child{
+    display: inline;
+	padding-right: 1%;
+	font-size: 22px;
 }
 
 @media (max-width: 767px) {
@@ -234,5 +245,6 @@ ul.share-buttons li{
     } 
 	ul.share-buttons>li:first-child {
     	display: block;
+		padding-bottom: 10px;
 	}
 }
