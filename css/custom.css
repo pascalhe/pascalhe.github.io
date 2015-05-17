@@ -90,7 +90,6 @@ q {
 	background-color: rgba(0, 0, 0, 0.1);
 	margin-top: 20px;
 	margin-bottom: 50px; 
-	padding-left: 40px;
 }
 
 .jumbotron p {
@@ -215,11 +214,12 @@ footer {
 
 @media (max-width: 767px) {
 	.jumbotron {
-		background:url('../img/weddingFlower_iphone.png') no-repeat;
+		background:url('../img/weddingFlower_iphone.png') no-repeat center center fixed;
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
 	} 
-	.jumbotron h1 {	
-		font-size: 16vw;
-	}
 }
 
 
