@@ -212,6 +212,15 @@ footer {
  	border-color: #3c763d;
 }
 
+ul.share-buttons{
+  list-style: none;
+  padding: 0;
+}
+
+ul.share-buttons li{
+  display: inline;
+}
+
 @media (max-width: 767px) {
 	.jumbotron {
 		background:url('../img/weddingFlower_iphone.png');
